@@ -1,6 +1,6 @@
 # Practical 15
 # User Database Setup
-
+In this practical I use DbFirst Approach
 This project contains SQL scripts to create and populate two tables: **User** and **FormUser**.
 
 ## 📌 Table: User
