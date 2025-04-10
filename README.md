@@ -1,5 +1,31 @@
-# Practical 15
-# User Database Setup
+# Practical 15 – ASP.NET MVC Authentication (Windows & Forms)
+
+This project demonstrates two authentication mechanisms in ASP.NET MVC using .NET Framework:
+
+- Test 1: Windows Authentication
+- Test 2: Forms Authentication
+
+Both implementations use SQL Server (`Practical15` database) for storing and interacting with user data.
+
+---
+
+## Common Prerequisite: Update Connection String
+
+In your `Web.config`, update the connection string based on your system setup:
+
+```xml
+<connectionStrings>
+    <add name="DefaultConnection"
+         connectionString="data source=SF-CPU-0226\SQLEXPRESS;initial catalog=Practical15;Integrated Security=True"
+         providerName="System.Data.SqlClient" />
+</connectionStrings>
+```
+
+---
+
+## Test 1: Windows Authentication
+
+### Step-by-Step Setup
 In this practical I use DbFirst Approach
 This project contains SQL scripts to create and populate two tables: **User** and **FormUser**.
 
