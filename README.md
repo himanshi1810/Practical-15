@@ -25,13 +25,15 @@ VALUES
 ### **Steps You have to follow**
 **Step 1. In the web.config file You have to enable authentication Mode**
 ```csharp
-<system.web>
-  <authentication mode="Forms">
-    <forms loginUrl="~/Account/Login" timeout="30" />
-  </authentication>
-  <compilation debug="true" targetFramework="4.7.2" />
-  <httpRuntime targetFramework="4.7.2" />
-</system.web>
+  <system.web>
+    <authentication mode="Windows" />
+    <authorization>
+      <!-- Deny access to all users except the administrators -->
+      <deny users="?" />
+    </authorization>
+    <compilation debug="true" targetFramework="4.7.2" />
+    <httpRuntime targetFramework="4.7.2" />
+  </system.web>
 ```
 **Step 2.Then use [Authorize] in controller**
 **Step 3.Then disable the anpnymous authentication & enable windows authentication in C:\Users\himanshi.gandhi\Desktop\Practical\MVC\Practical 15\.vs\Practical 15\config\applicationhost** 
